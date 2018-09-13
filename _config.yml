@@ -2,7 +2,7 @@ title: Jessica Verena "Lena" Schulze
 description: Exploring the wiring of your brain
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-midnight
-
+#theme: jekyll-theme-midnight
+remote_theme: volny/creative-theme-jekyll
 gems:
   - jekyll-mentions

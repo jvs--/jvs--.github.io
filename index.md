@@ -1,4 +1,4 @@
-### Pythonista + Machine Leanring Engineer + Computational Neuroscientist 
+### Machine Learning Engineer + Computational Neuroscientist 
 <img src="https://raw.githubusercontent.com/jvs--/jvs--.github.io/master/images/IMG_0147.JPG" width="150">
 
 Lena spends most of her time doing research as a Phd student in machine learning and neural computation at the [Okinawa Institute of Science and Technology (OIST)](http://www.oist.jp/), at the group of [Prof. Kenji Doya](https://groups.oist.jp/ncu). 

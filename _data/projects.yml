@@ -1,4 +1,4 @@
-# Project portfolio — edit this file to populate/adjust work.
+# Project portfolio. Edit this file to populate/adjust work.
 # Fields: title, category, blurb, meta (optional org·years), url (optional),
 #         image (optional), featured (optional).
 # Home shows entries with `featured: true`; Work shows all.
@@ -7,13 +7,13 @@
 # ── Studio projects ─────────────────────────────────────────
 - title: "OkiAki"
   category: "Games"
-  blurb: "An idle mobile game about renovating akiya — Japan's abandoned houses — one room at a time."
+  blurb: "An idle mobile game about renovating akiya, Japan's abandoned houses, one room at a time."
   url: ""
   featured: false
 
 - title: "Folio"
   category: "Apps"
-  blurb: "A note-taking app built around guided CBT worksheets — a calmer way to think things through."
+  blurb: "A note-taking app built around guided CBT worksheets, for a calmer way to think things through."
   url: ""
   featured: true
 

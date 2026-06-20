@@ -2,6 +2,9 @@
 .claude/
 CLAUDE.md
 
+# Design research / inspiration (local only)
+new_style_examples/
+
 # macOS
 .DS_Store
 Thumbs.db

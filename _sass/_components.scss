@@ -236,6 +236,14 @@ a.project-card:hover {
   margin-top: 28px;
 }
 .founder-block strong { color: var(--color-text-primary); }
+.founder-block__label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 8px;
+}
 
 // ── Contact ────────────────────────────────────────────────
 .contact-links { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }

@@ -75,10 +75,10 @@
   max-width: 720px;
   padding: clamp(28px, 4vw, 48px);
   border-radius: var(--radius-lg);
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.58);
   -webkit-backdrop-filter: blur(18px) saturate(125%);
   backdrop-filter: blur(18px) saturate(125%);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.65);
   box-shadow: var(--shadow-card);
 }
 // Page-wide purple gradient mesh behind the whole Home page — a fixed,
@@ -89,36 +89,36 @@
   inset: 0;
   z-index: -1;
   overflow: hidden;
-  background: linear-gradient(180deg,
-    var(--color-accent-xlt) 0%,
-    var(--color-accent-soft) 38%,
+  background: linear-gradient(165deg,
+    var(--color-accent-soft) 0%,
+    var(--color-accent-xlt) 42%,
     var(--color-bg) 100%);
 }
 .hero-banner__blob {
   position: absolute;
   border-radius: 50%;
-  filter: blur(44px);
+  filter: blur(48px);
   will-change: transform;
 }
 .hero-banner__blob--1 {
-  width: 44vw; height: 44vw; min-width: 320px; min-height: 320px;
+  width: 46vw; height: 46vw; min-width: 320px; min-height: 320px;
   left: -8%; top: -28%;
-  opacity: 0.6;
-  background: radial-gradient(circle at 35% 35%, var(--color-accent-mid) 0%, transparent 68%);
+  opacity: 0.72;
+  background: radial-gradient(circle at 35% 35%, var(--color-accent-mid) 0%, transparent 66%);
   animation: blob-1 22s ease-in-out infinite alternate;
 }
 .hero-banner__blob--2 {
-  width: 38vw; height: 38vw; min-width: 280px; min-height: 280px;
-  right: -6%; top: 24%;
-  opacity: 0.45;
-  background: radial-gradient(circle at 50% 50%, var(--color-accent) 0%, transparent 70%);
+  width: 40vw; height: 40vw; min-width: 280px; min-height: 280px;
+  right: -6%; top: 22%;
+  opacity: 0.62;
+  background: radial-gradient(circle at 50% 50%, var(--color-accent) 0%, transparent 68%);
   animation: blob-2 28s ease-in-out infinite alternate;
 }
 .hero-banner__blob--3 {
-  width: 32vw; height: 32vw; min-width: 240px; min-height: 240px;
+  width: 34vw; height: 34vw; min-width: 240px; min-height: 240px;
   left: 42%; bottom: -38%;
-  opacity: 0.45;
-  background: radial-gradient(circle at 50% 50%, var(--color-accent-mid) 0%, transparent 70%);
+  opacity: 0.55;
+  background: radial-gradient(circle at 50% 50%, var(--color-accent-deep) 0%, transparent 70%);
   animation: blob-3 25s ease-in-out infinite alternate;
 }
 @keyframes blob-1 { from { transform: translate(0, 0)        scale(1);    } to { transform: translate(9%, 14%)   scale(1.12); } }

@@ -2,7 +2,7 @@
 layout: default
 title: "About"
 permalink: /about/
-description: "About NA Lab — an independent software studio."
+description: "About NA Lab — an independent developer studio based in Okinawa, Japan."
 ---
 
 <section class="section">
@@ -12,23 +12,27 @@ description: "About NA Lab — an independent software studio."
     <p class="studio-name-ja">{{ site.studio_name_ja }}</p>
     <div class="divider-accent"></div>
 
-    <div class="prose" style="margin-top: 28px;">
-      <p class="lead">
-        An independent developer studio based in Okinawa, Japan.
-      </p>
-      <p>
-        We create digital products, including software applications, websites, and games,
-        and thoughtfully craft digital media such as art and video.
-      </p>
-
-      <div class="founder-block">
-        <p>
-          <strong>Founder &amp; operator:</strong> Lena Schulze. Placeholder — one sentence
-          on background (AI/ML, neural computation) and role running the studio.
-          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a> ·
-          <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+    <div class="about-grid">
+      <div class="prose">
+        <p class="lead">
+          An independent developer studio based in Okinawa, Japan.
         </p>
+        <p>
+          We create digital products, including software applications, websites, and games,
+          and thoughtfully craft digital media such as art and video.
+        </p>
+
+        <div class="founder-block">
+          <p>
+            <strong>Founder &amp; operator:</strong> Lena Schulze. Placeholder — one sentence
+            on background (AI/ML, neural computation) and role running the studio.
+            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a> ·
+            <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+          </p>
+        </div>
       </div>
+
+      <img class="about-bubble" src="{{ '/assets/na-bubble.gif' | relative_url }}" alt="NA Lab — な mark">
     </div>
   </div>
 </section>

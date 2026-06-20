@@ -18,6 +18,9 @@
   gap: 28px;
 }
 .nav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--font-display);
   font-size: 1.15rem;
   font-weight: 700;
@@ -26,6 +29,7 @@
   flex-shrink: 0;
 }
 .nav-brand span { color: var(--color-accent); }
+.nav-brand__mark { height: 30px; width: auto; }
 
 .nav-toggle {
   display: none;
@@ -64,7 +68,21 @@
 
 // ── Hero ───────────────────────────────────────────────────
 .hero {
-  padding: clamp(56px, 11vw, 128px) 0 clamp(40px, 7vw, 80px);
+  padding: clamp(32px, 6vw, 72px) 0 clamp(32px, 5vw, 56px);
+}
+// Floating banner at the top of Home — cropped to a band that
+// scales with the viewport (does not show the whole image).
+.hero-banner-wrap {
+  padding-top: clamp(20px, 4vw, 36px);
+}
+.hero-banner {
+  display: block;
+  width: 100%;
+  height: clamp(150px, 26vw, 360px);
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
 }
 .hero__eyebrow {
   font-size: 0.95rem;
@@ -172,6 +190,36 @@ a.project-card:hover {
   color: var(--color-accent);
   margin-top: 8px;
 }
+
+// ── About layout (prose + illustration) ────────────────────
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-top: 28px;
+}
+.about-illu {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+// Big な bubble mark (about)
+.about-bubble {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  margin: 4px auto 0;
+}
+@media (max-width: 760px) {
+  .about-grid { grid-template-columns: 1fr; }
+}
+
+// Brushstroke wordmark (contact)
+.brush-wordmark { max-width: 300px; width: 100%; height: auto; margin-bottom: 24px; }
 
 // ── Prose (about / generic) ────────────────────────────────
 .prose { max-width: 68ch; }

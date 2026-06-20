@@ -1,0 +1,37 @@
+---
+layout: default
+title: "Contact"
+permalink: /contact/
+description: "Get in touch with NA Lab."
+---
+
+<section class="section">
+  <div class="container">
+    <span class="section-label">Contact</span>
+    <h2>Get in touch</h2>
+    <div class="divider-accent"></div>
+
+    <div class="about-grid">
+      <div>
+        <p class="lead" style="max-width: 46ch;">
+          Have a project in mind, or just want to say hello? Reach out through any of these.
+        </p>
+
+        <div class="contact-links">
+          {% if site.linkedin_username %}
+          <a class="contact-link" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+            <span class="label">LinkedIn</span> linkedin.com/in/{{ site.linkedin_username }}
+          </a>
+          {% endif %}
+          {% if site.twitter_username %}
+          <a class="contact-link" href="https://twitter.com/{{ site.twitter_username }}">
+            <span class="label">X</span> @{{ site.twitter_username }}
+          </a>
+          {% endif %}
+        </div>
+      </div>
+
+      <img class="about-illu" src="{{ '/assets/about.png' | relative_url }}" alt="Illustration: building products at a laptop, with the なんくるないさ × ライフラボ wordmark on screen">
+    </div>
+  </div>
+</section>

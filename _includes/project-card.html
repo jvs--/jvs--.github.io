@@ -1,0 +1,22 @@
+{%- comment -%}
+  Renders one project card.
+  Usage: {% include project-card.html project=item %}
+  Expects project.{title, category, blurb, meta, url, image}
+  Becomes a clickable <a> only when url is a real link; otherwise a static <article>.
+{%- endcomment -%}
+{%- assign p = include.project -%}
+{%- assign has_link = false -%}
+{%- if p.url and p.url != "" and p.url != "#" -%}{%- assign has_link = true -%}{%- endif -%}
+{%- capture mark -%}{{ p.title | slice: 0, 2 | upcase }}{%- endcapture -%}
+{%- capture inner -%}
+  <div class="project-card__thumb">
+    {% if p.image %}<img src="{{ p.image | relative_url }}" alt="{{ p.title }}">{% else %}<span class="project-card__thumb-mark">{{ mark }}</span>{% endif %}
+  </div>
+  <div class="project-card__body">
+    {% if p.category %}<span class="pill">{{ p.category }}</span>{% endif %}
+    <h3 class="project-card__title">{{ p.title }}</h3>
+    {% if p.meta %}<p class="project-card__meta">{{ p.meta }}</p>{% endif %}
+    {% if p.blurb %}<p class="project-card__blurb">{{ p.blurb }}</p>{% endif %}
+  </div>
+{%- endcapture -%}
+{% if has_link %}<a class="project-card" href="{{ p.url }}"{% if p.url contains '://' %} target="_blank" rel="noopener"{% endif %}>{{ inner }}</a>{% else %}<article class="project-card">{{ inner }}</article>{% endif %}

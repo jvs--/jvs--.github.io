@@ -1,0 +1,21 @@
+---
+layout: default
+title: "Work"
+permalink: /work/
+description: "Selected work from NA Lab across AI/ML, apps, games, and experiments."
+---
+
+<section class="section">
+  <div class="container">
+    <span class="section-label">Portfolio</span>
+    <h2>Our work</h2>
+    <div class="divider-accent"></div>
+    <p class="lead" style="margin-top: 20px; max-width: 60ch;">
+      Independent studio projects, alongside a decade of professional AI/ML engineering across medical tech, retail, and industry.
+    </p>
+
+    <div class="card-grid" style="margin-top: 40px;">
+      {% for item in site.data.projects %}{% include project-card.html project=item %}{% endfor %}
+    </div>
+  </div>
+</section>

@@ -66,23 +66,66 @@
   font-weight: 600;
 }
 
-// ── Hero ───────────────────────────────────────────────────
+// ── Hero (NA Lab) ───────────────────────────────────────────
 .hero {
-  padding: clamp(32px, 6vw, 72px) 0 clamp(32px, 5vw, 56px);
+  padding: clamp(72px, 13vw, 160px) 0 clamp(56px, 9vw, 110px);
 }
-// Floating banner at the top of Home — cropped to a band that
-// scales with the viewport (does not show the whole image).
-.hero-banner-wrap {
-  padding-top: clamp(20px, 4vw, 36px);
-}
-.hero-banner {
-  display: block;
-  width: 100%;
-  height: clamp(150px, 26vw, 360px);
-  object-fit: cover;
-  object-position: center;
+// Frosted-glass card holding the hero content, floating over the mesh.
+.hero-card {
+  max-width: 720px;
+  padding: clamp(28px, 4vw, 48px);
   border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(18px) saturate(125%);
+  backdrop-filter: blur(18px) saturate(125%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow: var(--shadow-card);
+}
+// Page-wide purple gradient mesh behind the whole Home page — a fixed,
+// calm backdrop so hero / sections / cards share one continuous field.
+// Soft blurred accent-color blobs drift slowly behind the content.
+.home-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: linear-gradient(180deg,
+    var(--color-accent-xlt) 0%,
+    var(--color-accent-soft) 38%,
+    var(--color-bg) 100%);
+}
+.hero-banner__blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(44px);
+  will-change: transform;
+}
+.hero-banner__blob--1 {
+  width: 44vw; height: 44vw; min-width: 320px; min-height: 320px;
+  left: -8%; top: -28%;
+  opacity: 0.6;
+  background: radial-gradient(circle at 35% 35%, var(--color-accent-mid) 0%, transparent 68%);
+  animation: blob-1 22s ease-in-out infinite alternate;
+}
+.hero-banner__blob--2 {
+  width: 38vw; height: 38vw; min-width: 280px; min-height: 280px;
+  right: -6%; top: 24%;
+  opacity: 0.45;
+  background: radial-gradient(circle at 50% 50%, var(--color-accent) 0%, transparent 70%);
+  animation: blob-2 28s ease-in-out infinite alternate;
+}
+.hero-banner__blob--3 {
+  width: 32vw; height: 32vw; min-width: 240px; min-height: 240px;
+  left: 42%; bottom: -38%;
+  opacity: 0.45;
+  background: radial-gradient(circle at 50% 50%, var(--color-accent-mid) 0%, transparent 70%);
+  animation: blob-3 25s ease-in-out infinite alternate;
+}
+@keyframes blob-1 { from { transform: translate(0, 0)        scale(1);    } to { transform: translate(9%, 14%)   scale(1.12); } }
+@keyframes blob-2 { from { transform: translate(0, 0)        scale(1);    } to { transform: translate(-11%, 9%)  scale(1.06); } }
+@keyframes blob-3 { from { transform: translate(0, 0)        scale(1);    } to { transform: translate(7%, -12%)  scale(1.14); } }
+@media (prefers-reduced-motion: reduce) {
+  .hero-banner__blob { animation: none; }
 }
 .hero__eyebrow {
   font-size: 0.95rem;

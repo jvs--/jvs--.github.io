@@ -4,20 +4,22 @@ title: ""
 permalink: /
 ---
 
-<section class="hero-banner-wrap">
-  <div class="container">
-    <img class="hero-banner" src="{{ '/assets/header-colored-blocks-jp.jpg' | relative_url }}" alt="なんくるないさ × ライフラボ">
-  </div>
-</section>
+<div class="home-bg" aria-hidden="true">
+  <span class="hero-banner__blob hero-banner__blob--1"></span>
+  <span class="hero-banner__blob hero-banner__blob--2"></span>
+  <span class="hero-banner__blob hero-banner__blob--3"></span>
+</div>
 
 <section class="hero">
   <div class="container">
-    <p class="hero__eyebrow">{{ site.studio_name_ja }}</p>
-    <h1 class="hero__wordmark">NA <span>Lab</span></h1>
-    <p class="hero__tagline">{{ site.tagline }}</p>
-    <div class="hero__actions">
-      <a class="btn btn-primary" href="{{ '/work/' | relative_url }}">See our work →</a>
-      <a class="btn btn-ghost" href="{{ '/contact/' | relative_url }}">Get in touch</a>
+    <div class="hero-card">
+      <p class="hero__eyebrow">{{ site.studio_name_ja }}</p>
+      <h1 class="hero__wordmark">NA <span>Lab</span></h1>
+      <p class="hero__tagline">{{ site.tagline }}</p>
+      <div class="hero__actions">
+        <a class="btn btn-primary" href="{{ '/work/' | relative_url }}">See our work →</a>
+        <a class="btn btn-ghost" href="{{ '/contact/' | relative_url }}">Get in touch</a>
+      </div>
     </div>
   </div>
 </section>

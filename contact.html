@@ -1,0 +1,36 @@
+---
+layout: default
+title: "Contact"
+permalink: /contact/
+description: "Get in touch with NA Lab."
+---
+
+<section class="section">
+  <div class="container">
+    <span class="section-label">Contact</span>
+    <h2>Get in touch</h2>
+    <div class="divider-accent"></div>
+
+    <p class="lead" style="margin-top: 24px; max-width: 52ch;">
+      Placeholder — a line inviting people to reach out about work or collaboration.
+    </p>
+
+    <div class="contact-links">
+      {% if site.github_username %}
+      <a class="contact-link" href="https://github.com/{{ site.github_username }}">
+        <span class="label">GitHub</span> github.com/{{ site.github_username }}
+      </a>
+      {% endif %}
+      {% if site.linkedin_username %}
+      <a class="contact-link" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+        <span class="label">LinkedIn</span> linkedin.com/in/{{ site.linkedin_username }}
+      </a>
+      {% endif %}
+      {% if site.twitter_username %}
+      <a class="contact-link" href="https://twitter.com/{{ site.twitter_username }}">
+        <span class="label">X</span> @{{ site.twitter_username }}
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</section>

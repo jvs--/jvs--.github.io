@@ -1,0 +1,39 @@
+# Project portfolio — edit this file to populate real work.
+# Fields: title, category, blurb, url (optional), image (optional), featured (optional)
+# Home shows entries with `featured: true`; Work shows all.
+
+- title: "Recommendation Engine"
+  category: "AI / ML"
+  blurb: "Placeholder — a production recommendation system. Describe the problem and outcome here."
+  url: "#"
+  featured: true
+
+- title: "Note-Taking App"
+  category: "Apps"
+  blurb: "Placeholder — a personal knowledge tool. Swap in the real description and link."
+  url: "#"
+  featured: true
+
+- title: "Indie Game"
+  category: "Games"
+  blurb: "Placeholder — an indie game project. Add a one-line hook and a link or screenshot."
+  url: "#"
+  featured: true
+
+- title: "Brain Imaging Toolkit"
+  category: "Research"
+  blurb: "Placeholder — algorithms for analyzing neural imaging data. Reframe in studio voice."
+  url: "#"
+  featured: false
+
+- title: "Worksheet Suite"
+  category: "Tools"
+  blurb: "Placeholder — a set of interactive, printable worksheets. Describe what it does."
+  url: "#"
+  featured: false
+
+- title: "Project Name"
+  category: "Category"
+  blurb: "Placeholder — another piece of work. Duplicate this block per project."
+  url: "#"
+  featured: false

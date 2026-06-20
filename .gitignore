@@ -5,6 +5,9 @@ CLAUDE.md
 # Design research / inspiration (local only)
 new_style_example/
 
+# Project bookkeeping (decisions, issues, working notes — local only)
+DECISIONS.md
+
 # macOS
 .DS_Store
 Thumbs.db

@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div>
+      <span class="site-footer__brand">{{ site.studio_short }}</span>
+      <span class="site-footer__copy">&nbsp;·&nbsp; © {{ site.time | date: '%Y' }}</span>
+    </div>
+    <nav class="site-footer__links">
+      {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}">GitHub</a>{% endif %}
+      {% if site.linkedin_username %}<a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>{% endif %}
+      {% if site.twitter_username %}<a href="https://twitter.com/{{ site.twitter_username }}">X</a>{% endif %}
+    </nav>
+  </div>
+</footer>

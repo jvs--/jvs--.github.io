@@ -1,3 +1,52 @@
 ---
-layout: front
+layout: default
+title: ""
+permalink: /
 ---
+
+<section class="hero">
+  <div class="container">
+    <p class="hero__eyebrow">{{ site.studio_name_ja }}</p>
+    <h1 class="hero__wordmark">NA <span>Lab</span></h1>
+    <p class="hero__tagline">{{ site.tagline }}</p>
+    <div class="hero__actions">
+      <a class="btn btn-primary" href="{{ '/work/' | relative_url }}">See our work →</a>
+      <a class="btn btn-ghost" href="{{ '/contact/' | relative_url }}">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <span class="section-label">What we do</span>
+    <div class="capabilities">
+      <div class="capability">
+        <h3>AI / ML engineering</h3>
+        <p>Placeholder — recommendation systems, models, and data-driven tooling.</p>
+      </div>
+      <div class="capability">
+        <h3>Software products</h3>
+        <p>Placeholder — apps and tools built end to end, from idea to ship.</p>
+      </div>
+      <div class="capability">
+        <h3>Indie &amp; experiments</h3>
+        <p>Placeholder — games and side projects where we try new things.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <span class="section-label">Selected work</span>
+    <h2>Things we&rsquo;ve built</h2>
+    <div class="divider-accent"></div>
+    <div class="card-grid" style="margin-top: 32px;">
+      {% assign featured = site.data.projects | where: "featured", true %}
+      {% for item in featured %}{% include project-card.html project=item %}{% endfor %}
+    </div>
+    <div style="margin-top: 32px;">
+      <a class="btn btn-ghost" href="{{ '/work/' | relative_url }}">View all work →</a>
+    </div>
+  </div>
+</section>

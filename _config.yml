@@ -1,7 +1,10 @@
 # Site settings
-title:
-email: jessica.schulze@gmail.com
+title: "NA Lab"
+studio_short: "NA Lab"                       # English name
+studio_name_ja: "なんくるないさ × ライフラボ"   # Japanese name
+tagline: "An independent developer studio based in Okinawa, Japan." # placeholder — refine
 description: > # this means to ignore newlines until "baseurl:"
+  NA Lab（なんくるないさ × ライフラボ）— an independent developer studio based in Okinawa, Japan.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
@@ -11,5 +14,5 @@ linkedin_username: jvschulze
 
 # Build settings
 markdown: kramdown
-
-theme: jekyll-theme-cayman
+sass:
+  style: compressed

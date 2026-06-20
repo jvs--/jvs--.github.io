@@ -1,39 +1,61 @@
-# Project portfolio — edit this file to populate real work.
-# Fields: title, category, blurb, url (optional), image (optional), featured (optional)
+# Project portfolio — edit this file to populate/adjust work.
+# Fields: title, category, blurb, meta (optional org·years), url (optional),
+#         image (optional), featured (optional).
 # Home shows entries with `featured: true`; Work shows all.
+# A card becomes a clickable link only when `url` is a real URL (not blank / "#").
 
+# ── Studio projects ─────────────────────────────────────────
+- title: "OkiAki"
+  category: "Games"
+  blurb: "An idle mobile game about renovating akiya — Japan's abandoned houses — one room at a time."
+  url: ""
+  featured: false
+
+- title: "Folio"
+  category: "Apps"
+  blurb: "A note-taking app built around guided CBT worksheets — a calmer way to think things through."
+  url: ""
+  featured: true
+
+# ── Professional work ───────────────────────────────────────
 - title: "Recommendation Engine"
   category: "AI / ML"
-  blurb: "Placeholder — a production recommendation system. Describe the problem and outcome here."
-  url: "#"
+  meta: "UNIQLO · 2022–2024"
+  blurb: "In-house personalization models that replaced a vendor solution, improving CTR and CVR on UNIQLO.COM in Japan and the US."
+  url: ""
   featured: true
 
-- title: "Note-Taking App"
-  category: "Apps"
-  blurb: "Placeholder — a personal knowledge tool. Swap in the real description and link."
-  url: "#"
+- title: "Hybrid Medical Search"
+  category: "AI / ML"
+  meta: "MNES · 2024–present"
+  blurb: "Vector + keyword search over Japanese medical data, with a re-ranking model tuned on heuristics and feedback from medical domain experts."
+  url: ""
   featured: true
 
-- title: "Indie Game"
-  category: "Games"
-  blurb: "Placeholder — an indie game project. Add a one-line hook and a link or screenshot."
-  url: "#"
-  featured: true
+- title: "Medical NLP"
+  category: "AI / ML"
+  meta: "MNES · 2024–present"
+  blurb: "Domain-specific LLM fine-tuning and distillation for medical NLP, plus a RAG-based Slack chatbot for internal knowledge retrieval."
+  url: ""
+  featured: false
 
-- title: "Brain Imaging Toolkit"
+- title: "Customer Analytics"
+  category: "Data"
+  meta: "MNES · 2024–present"
+  blurb: "Dashboards for churn, support, and company performance, and health-data simulations shaped from real human activity statistics."
+  url: ""
+  featured: false
+
+- title: "Industrial ML"
+  category: "AI / ML"
+  meta: "Goodyear · 2019–2021"
+  blurb: "Fraud detection, pricing optimization, machine-telemetry models, and ESG reporting for global industrial operations."
+  url: ""
+  featured: false
+
+- title: "Neural Signal Analysis"
   category: "Research"
-  blurb: "Placeholder — algorithms for analyzing neural imaging data. Reframe in studio voice."
-  url: "#"
-  featured: false
-
-- title: "Worksheet Suite"
-  category: "Tools"
-  blurb: "Placeholder — a set of interactive, printable worksheets. Describe what it does."
-  url: "#"
-  featured: false
-
-- title: "Project Name"
-  category: "Category"
-  blurb: "Placeholder — another piece of work. Duplicate this block per project."
-  url: "#"
+  meta: "OIST · 2012–2019"
+  blurb: "Bayesian ML algorithms for neural activity data, developed for Japan's Brain/MINDS project during a Ph.D. in the Neural Computation Unit."
+  url: ""
   featured: false

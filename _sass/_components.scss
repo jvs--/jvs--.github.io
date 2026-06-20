@@ -185,6 +185,13 @@ a.project-card:hover {
 }
 .project-card__body { padding: 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
 .project-card__title { font-size: 1.2rem; }
+.project-card__meta {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--color-text-tertiary);
+  margin-top: -4px;
+}
 .project-card__blurb { font-size: 0.92rem; color: var(--color-text-tertiary); }
 
 // Pills & category labels
